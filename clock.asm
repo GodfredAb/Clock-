@@ -103,7 +103,8 @@ ntensdigit:
     mov al, '0'           ; Ensure leading '0' is set
     ret
 
-; Add a delay using nanosleep
+; Add a delay using nano sleep
+
 delay:
     mov rax, 35            ; sys_nanosleep
     lea rdi, [rel ts]      ; Pointer to timespec structure
